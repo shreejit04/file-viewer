@@ -6,12 +6,12 @@ Public methods:
 
     ●	void display(): User interface; shows options to user, displays error messages when commands are not done correctly.
     ●	void execute_command(char command, bool& done): Has the following commands:
-      ○ next: moves to the next page
-      ○ previous: moves to the previous page
-      ○ open: opens file using file name; if file cannot be opened, displays error message
-      ○ search: searches through file for a string; if string cannot be found, displays error message
-      ○ back: returns to file opened previously
-      ○ go: goes to a file using a specific number assigned to each file ○ quit: quits file viewer ● void run(): Runs the file viewer.
+      ○     next: moves to the next page
+      ○     previous: moves to the previous page
+      ○     open: opens file using file name; if file cannot be opened, displays error message
+      ○     search: searches through file for a string; if string cannot be found, displays error message
+      ○     back: returns to file opened previously
+      ○     go: goes to a file using a specific number assigned to each file ○ quit: quits file viewer ● void run(): Runs the file viewer.
       Implementation note: Holds the lines of text in a Buffer object. The displaying of the buffer contents and the execution of the commands is delegated to the Buffer object.
       Collaborator: Buffer
 _____________________________________________________________________________________________
@@ -25,7 +25,7 @@ A buffer for a simple file viewer. Holds the lines of text and executes commands
     ●	void display() const: Displays the lines of text that the user is currently viewing.
     ●	const string& new_file_name() const: Returns the name of the file.
     ●	bool open(const string& new_file_name): Opens the file, uses anchors and line spacing to make sure text is formatted correctly; adds file to history to be used in back function.
-      ○ Executes the corresponding file viewer command on the buffer. See program specification for details.  The method open returns true if successful.
+      ○     Executes the corresponding file viewer command on the buffer. See program specification for details.  The method open returns true if successful.
     ●	bool search(const string& input): Loops through the file to find a specific string within that file; returns false if string is not found.
     ●	string process_anchor(const string& line, const string& f_name, const string& text): assigns each file an anchor, a number, and returns that anchor.
     ●	void add_word(const string& word, string& line): makes sure the line fits within the window width, if it does not fit, then it moves the word to the next line.
@@ -74,6 +74,6 @@ Declarations of the following methods:
     ●	int ix_top_line_ = 0: sets the first line to 0, to know how many lines to display on the screen to the user.
     ●	string file_name
     ●	int window_height_: Total number of visible lines in a window 
-    ● int window_width_: Total characters (or less) in a particular line
+    ●   int window_width_: Total characters (or less) in a particular line
     ●	vector<string> history: stores the names of previous files visited.
     ●	vector<string> anchor_files: stores anchor file names such that they can be accessed using an index value.
