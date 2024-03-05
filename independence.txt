@@ -1,0 +1,10 @@
+A function is a said to be independent section of <br>
+C / C++ code that performs a specific task and <br>
+optionally returns a value to the calling program. 
+<p>
+Functions in C++ are "independent", they cannot <br>
+change values of the variables in another function <br>
+unless you pass parameters by reference or do some <br>
+hacks (which presumably you don't do). 
+<p>
+See more about <a modularity.txt modular> programs.

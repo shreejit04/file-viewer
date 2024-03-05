@@ -1,0 +1,11 @@
+A module is a collection of functions or classes <br>
+that perform related functions.
+<p>
+Functions can also be <a independence.txt independent>.
+<p>
+Modular programming is a software design technique <br>
+that emphasizes separating the functionality of a <br>
+program into independent, interchangeable modules, <br>
+such that each contains everything necessary to <br>
+execute only one aspect of the desired functionality. <br>
+<p>
